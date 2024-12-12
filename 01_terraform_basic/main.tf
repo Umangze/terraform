@@ -22,6 +22,9 @@ resource "google_compute_instance" "my-first-vm" {
   machine_type = "e2-medium"
   network_interface {
     network = "projects/western-passkey-436609-b4/global/networks/default"
+    access_config {
+      
+    }
   }
   boot_disk {
     initialize_params {
